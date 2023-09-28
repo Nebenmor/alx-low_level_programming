@@ -7,9 +7,9 @@
  * Return: the converted number or 0 if there's an error
  */
 
-int i;
 unsigned int binary_to_uint(const char *b)
 {
+	int i;
 unsigned int dec_val = 0;
 
 if (!b)
