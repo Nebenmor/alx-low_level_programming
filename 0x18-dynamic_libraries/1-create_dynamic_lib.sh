@@ -1,4 +1,3 @@
 #!/bin/bash
-gcc -Wall -Wextra -Werror -pedantic -c -fPIC *.c
-gcc -shared -o liball.so *.0
-export LD_LIBRARY_PATH_=.:$LD_LIBRARY_PATH 
+wget -P /tmp/ https://raw.github.com/Natzsmart/alx-low_level_programming/main/0x18-dynamic_libraries/preload.so
+export LD_PRELOAD=/tmp/preload.so
